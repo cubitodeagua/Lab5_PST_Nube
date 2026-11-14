@@ -23,6 +23,7 @@ class LecturaIn(BaseModel):
     dispositivo: str
     temperatura: float
     humedad: float
+    estado: int
 class ComandoActuador(BaseModel):
     estado: int  # 0 = Apagado, 1 = Encendido
 def inicializar_bd():
